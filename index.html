@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bytes</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+  <div class="image"></div>
+
+  <div class="bg-text">
+    <h1>Ingredientsafe</h1>
+    <p>Smart, fast, comprehensive allergy-checker for everyone.</p>
+    <p>How to use: Enter username and allergies/dietary restrictions, then upload image of food or product label to checker.</p>
+
+    <div class="container">
+      <form action="action_page.php">
+        <div class="form__input-group">
+          <input type="text" id="myName" class="form__input" placeholder="Input username"><br>
+          <input type="text" id="myAllergy" class="form__input" placeholder="Enter allergies or dietary restrictions">
+        </div>
+      </form>
+    </div>
+
+    <style>
+      .thumb {
+          height: 75px;
+          border: 1px solid #000;
+          margin: 10px 5px 0 0;
+      }
+  </style>
+  
+  <script type="text/javascript">
+      $(function () {
+          $(":file").change(function () {
+              if (this.files && this.files[0]) {
+                  var reader = new FileReader();
+  
+                  reader.onload = imageIsLoaded;
+                  reader.readAsDataURL(this.files[0]);
+              }
+          });
+      });
+  
+      function imageIsLoaded(e) {
+          $('#myImg').attr('src', e.target.result);
+          $('#yourImage').attr('src', e.target.result);
+      };
+  
+  </script>
+  
+  <input class="upload" type='file'>
+  <!-- <br>
+   <button type="button" id="myButton" class="form__button">Check</button> -->
+   <a href="results.html">
+      <br>
+        <button type="button" id="myButton" class="form__button">Check</button>
+   </a>
+    
+  <script src="homepage.js">
+  </script>
+  </div>    
+  </body>
+
+
+</html>

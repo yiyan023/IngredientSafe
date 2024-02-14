@@ -1,0 +1,109 @@
+/*background picture*/
+body {
+    background-image: url('background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+/*title*/
+h1 {
+    text-align: center;
+    font-family: 'DM Sans', sans-serif;
+}
+
+p {
+    font-family: 'DM Sans', sans-serif;
+
+}
+
+/**/
+body, html {
+    height: 100%;
+}
+ 
+  
+.bg-image {
+    /* The image used */
+    background-image: url("background.jpg");
+  
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+  
+    /* Full height */
+    height: 100%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    bottom: -10%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 80%;
+    padding: 20px;
+    text-align: center;
+  }
+
+.form__input-group {
+    padding:1rem;
+}
+
+.form__input {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    display:block;
+    width:90%;
+    padding:0.75rem;
+    margin : 0 auto;
+    outline:none;
+    border: 1px solid rgba(255, 255, 255, 0.758);
+    background-color:rgba(255, 255, 255, 0.758);
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+    border-color: rgb(0, 0, 0);
+    background:#e5e5e5;
+}
+
+.form__button {
+    font-family: 'DM Sans', sans-serif;
+    color:#cfcfcf;
+    padding: 0.75em;
+    display: block;
+    border:none;
+    margin : 0 auto;
+    background-color: rgba(0,0,0, 0.6);
+    font-size: 20px;
+    font-weight:bold;
+    width:20%;
+    margin-top: 3%;
+    border-radius: 4px;
+}
+
+.form__button:hover {
+    cursor:pointer;
+    color: #e5e5e5;   
+    background-color: rgba(0,0,0, 0.8);
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.upload {
+    font-family: 'DM Sans', sans-serif;
+    text-align: center;
+}
