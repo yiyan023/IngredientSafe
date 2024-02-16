@@ -11,4 +11,4 @@ By enabling users to upload images & input their dietary restructions, Ingredien
   
 ![B919DB15-BDC2-4608-AD4B-C9E0BD0D734C_1_105_c](https://github.com/yiyan023/IngredientSafe/assets/56096857/f684bcc0-665c-4495-ad8a-d5a565e0cacf)
 
-- The images were then converted into text using Pytesseract and OpenCV, in which certain keywords were extracted to determine whether there are potential health risks, which is sent back to the user through the frontend
+- The images were then converted into text using Pytesseract and OpenCV, in which certain keywords were extracted to determine whether there are potential health risks, which is sent back to the user through the frontend through Flask
