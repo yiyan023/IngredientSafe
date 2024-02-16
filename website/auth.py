@@ -34,7 +34,7 @@ def land():
             text = text.lower()
 
             for restriction in restrictions:
-                for item in restrictionGroups.get(restriction, []):
+                for item in restrictionGroups[restriction]:
                     if item in text:
                         print("Redirecting to badresult.html")
                         return redirect("badresult.html")
