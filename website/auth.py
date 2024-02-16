@@ -26,8 +26,8 @@ def land():
             image = request.files['image']
 
             # read in grey scale
-            file_bytes = np.asarray(bytearray(image.read()), dtype=np.uint8)
-            textImage = cv2.imdecode(file_bytes, cv2.IMREAD_GRAYSCALE)
+            textImage = cv2.imread(image, 0)
+            text = pytesseract.image_to_string(textImage)
 
             # Continue with your processing
             text = pytesseract.image_to_string(textImage)

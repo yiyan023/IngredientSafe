@@ -3,10 +3,13 @@ import os
 import cv2
 import pytesseract  
 #intitialize tesseract
+
 pytesseract.pytesseract.tesseract_cmd = "tesseract"
 os.environ["TESSDATA_PREFIX"] = "/home/runner/.apt/usr/share/tesseract-ocr/4.00/tessdata/"
   
-restrictionGroups = {"lactose": ["milk", "cheese", "butter", "cream", "butter"], "vegetarian": ["pork", "beef", "chicken", "lamb", "fish","shellfish"], "vegan": ["pork", "beef", "chicken", "lamb","shellfish", "fish","egg","milk"], "gluten": ["wheat", "barley", "rye"], "pascetarian": ["pork", "beef", "chicken", "lamb"]}
+restrictionGroups = {
+  "lactose": ["milk", "cheese", "butter", "cream", "butter"], 
+  "vegetarian": ["pork", "beef", "chicken", "lamb", "fish","shellfish"], "vegan": ["pork", "beef", "chicken", "lamb","shellfish", "fish","egg","milk"], "gluten": ["wheat", "barley", "rye"], "pascetarian": ["pork", "beef", "chicken", "lamb"]}
 #make it a list
 restrictionlist = allergy.split(",")
   
